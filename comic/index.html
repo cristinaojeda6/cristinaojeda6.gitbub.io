@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ComicSorting</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://public.codepenassets.com/js/prefixfree-1.0.7.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!----- 
+ComicSorting Layout v 1.0 (21/12/2022) 
++ Movable panels
++ writing content (bubble input)
+
+Based on 
+ SortableJS  https://github.com/SortableJS/Sortable
+and @andrewgrant Speech Bubble Input
+   https://codepen.io/andrewgrant/pen/pjmePY
+
+Los paneles se muestran en flujo continuo y altura fija
+
+assets: Open Doodles
+https://blush.design/collections/L9oIBvB7R7IjzZWxOfIu/open-doodles
+
+https://freesvg.org/standing-character
+https://www.freepik.es/vectores/home-office
+
+----->
+
+<!--- <div id="move">  --- paneles movibles -->
+ 
+<div class="comic">
+  
+    <!---- VIÑETA 1  -------->
+   
+  <div class="panel c_blanco" style="height:160px;">
+    <p class="titulo_comix"> Paneles movibles!<br> comicSorting </p>
+    <p class="subtitulo_comix"> by @mediaUX, 2023</p>
+  </div>
+  
+  
+   <div id="move">  <! ---  ITEMS MOVIBLES ---->
+
+
+  
+  
+     <!---- VIÑETA 2  -------->
+
+  <div class="panel c_azul" >
+   
+    <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input" > 
+    </div>
+    
+      <!--- https://freesvg.org/boy-with-glasses --->
+    
+    <img src="https://freesvg.org/img/hipsterGlassesBoy.png" style="scale:0.3; position:absolute; top: -100px; left: -200px;">
+  </div>
+
+  
+  <!---- VIÑETA 3  -------->
+
+  <div class="panel f_office_2">
+<!---
+    <p class="speech" style="position:absolute; top: 0px; left: 50px;">I'm sad</p>  --->
+    <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+
+    <!--- https://freesvg.org/sad-baby-girl --->
+    <img  src="https://freesvg.org/img/mix-and-match-characters62.png" style="scale:0.3; position:absolute; top: -100px; left: -250px;">
+        
+   </div>
+    
+  <!---- VIÑETA 4  -------->
+
+  <div class="panel f_pasillo">
+ <!--- https://freesvg.org/sad-baby-girl --->
+    <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div> 
+    
+ <img  src="https://freesvg.org/img/mix-and-match-characters50.png" style="scale:0.3; position:absolute; top: -100px; left: -180px;">
+ 
+  </div>
+    
+    
+  <!---- VIÑETA 5  -------->
+  <div class="panel f_pasillo">
+    
+  <!--- https://freesvg.org/surprised-toddler --->
+   <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+    
+    <img src= "https://freesvg.org/img/mix-and-match-characters29.png" style="scale:0.3; position:absolute; top: -100px; left: -180px;">
+  
+  </div>
+ 
+
+    <!---- VIÑETA 6  -------->
+ <div class="panel c_azul">
+ 
+      <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+   
+   <img src= "https://freesvg.org/img/unimpressed-alien.png" style="scale:0.2; position: absolute; top: -60px; left: -200px; ">  
+   </div>
+  
+  
+  <!---- VIÑETA 7  -------->
+ <div class="panel c_verde">
+   
+      <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+   <!---- https://freesvg.org/laughing-girl ---> 
+   <img src= "https://freesvg.org/img/mix-and-match-characters51.png" style="scale:0.5; position: absolute; top: -60px; left: -150px; opacity: 0.8;">
+  </div>
+  
+ 
+ <!---- VIÑETA 8  -------->
+  <div class="panel c_azul">
+ <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+    <!-  https://freesvg.org/pointing-boy-vector-image  ---->
+    
+      <img src="https://freesvg.org/img/hipsterGlassesBoy12.png" style="scale:0.3; position:absolute; top: -100px; left: -180px;" >
+  </div>
+ 
+  
+  
+  <!---- VIÑETA 9  -------->
+  <div class="panel f_pasillo">
+   
+      <img src= "https://freesvg.org/img/voodoo.png" style="position: absolute; scale:0.3; top: -120px; left: -120px; opacity: 1;" >
+  </div>
+  
+
+  <!---- VIÑETA 10  -------->
+  
+  <div class="panel c_azul">
+
+     <div class="talking_bubble">
+         <div class="tip"></div> 
+         <input type="text" placeholder="type here"             class="enter-input"> 
+    </div>
+ <!-  https://freesvg.org/cartoon-toddler  ---->
+    
+      <img src= "https://freesvg.org/img/mix-and-match-characters59.png" style="scale:0.3; position:absolute; top: -100px; left: -180px;" >
+  </div>
+ 
+
+
+  </div> <!---- movable ---> 
+ 
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
